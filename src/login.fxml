@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login">
+   <children>
+      <ImageView fitHeight="410.0" fitWidth="611.0" layoutX="-2.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image5.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="332.199951171875" endY="-5.999996185302734" layoutX="251.0" layoutY="22.0" startX="-239.79998779296875" startY="-5.999996185302734" />
+      <Line endX="300.4000244140625" endY="197.4000244140625" layoutX="282.0" layoutY="185.0" startX="-270.0" startY="197.4000244140625" />
+      <Line endX="-146.29998779296875" endY="168.4000244140625" layoutX="157.0" layoutY="210.0" startX="-146.29998779296875" startY="-193.5" />
+      <Line endX="211.699951171875" endY="-129.5" layoutX="372.0" layoutY="146.0" startX="211.699951171875" startY="234.0" />
+      <Label layoutX="49.0" layoutY="48.0" prefHeight="36.0" prefWidth="204.0" text="     USER  LOGIN" textFill="#23a3df">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="171.0" fitWidth="232.0" layoutX="336.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image%201.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="100.0" layoutX="160.0" layoutY="86.0" startX="-100.0" stroke="#d42424" />
+      <Label layoutX="49.0" layoutY="105.0" text="user name :" textFill="#c12020">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="184.0" text="password :" textFill="#2390b1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernametext" layoutX="48.0" layoutY="139.0" prefHeight="26.0" prefWidth="232.0" />
+      <TextField fx:id="passwordtext" layoutX="51.0" layoutY="223.0" prefHeight="26.0" prefWidth="232.0" />
+      <Line endX="3.79998779296875" endY="-0.4000091552734375" layoutX="118.0" layoutY="131.0" startX="-69.0" startY="-0.4000091552734375" stroke="#dbce3b" />
+      <Line endX="52.20001220703125" endY="-0.4000091552734375" layoutX="66.0" layoutY="210.0" startX="-14.999977111816406" startY="-0.4000091552734375" stroke="#c4c73d" />
+      <Button fx:id="signin" layoutX="221.0" layoutY="290.0" mnemonicParsing="false" onAction="#insert" text="SIGN IN" textFill="#54a666" />
+      <Button fx:id="signup" layoutX="49.0" layoutY="290.0" mnemonicParsing="false" onAction="#register" text="SIGN UP" textFill="#329e2a" />
+   </children>
+</AnchorPane>

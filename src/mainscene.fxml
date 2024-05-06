@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainscenecontroller">
+   <children>
+      <ImageView fitHeight="408.0" fitWidth="607.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image8.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="32.0" prefHeight="18.0" prefWidth="570.0" text="                                    Guessing  Game - UNLOCK THE ENIGMA" textFill="#e3f210">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Circle fill="#eccb27" layoutX="149.0" layoutY="207.0" radius="52.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ffea1f" layoutX="299.0" layoutY="207.0" radius="52.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#fff71f" layoutX="447.0" layoutY="207.0" radius="52.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="111.0" layoutY="192.0" text="   EASY" textFill="#330505">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="level1" layoutX="122.0" layoutY="281.0" mnemonicParsing="false" onAction="#switchtolevel1" text="easy" textFill="#383b07" />
+      <Button fx:id="level2" layoutX="272.0" layoutY="281.0" mnemonicParsing="false" onAction="#switchtolevel2" text="medium" />
+      <Button fx:id="level3" layoutX="420.0" layoutY="281.0" mnemonicParsing="false" onAction="#switchtolevel3" text="hard" />
+      <Label layoutX="261.0" layoutY="192.0" text="MEDIUM">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="192.0" text="  HARD">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="113.0" fitWidth="75.0" layoutX="372.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image4.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

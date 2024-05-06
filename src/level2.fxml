@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="level2controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="608.0" layoutX="-1.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image9.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="9.0" layoutY="-10.0" prefHeight="52.0" prefWidth="582.0" text="                                           MEDIUM LEVEL" textFill="#6e14ff">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="51.0" prefHeight="18.0" prefWidth="559.0" text="                                              CAN YOU DEFEAT ME....?" textFill="#c6ff09">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="77.0" prefHeight="38.0" prefWidth="539.0" text="                                I HAVE CHOSEN A NUMBER FROM 1 TO 50..." textFill="#00ff1a">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="resulttext" layoutX="225.0" layoutY="154.0" />
+      <Button layoutX="274.0" layoutY="250.0" mnemonicParsing="false" onAction="#checkGuess" text="SUBMIT" />
+      <Button layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#hint" text="HINT💡" textFill="#363636" />
+      <Button layoutX="32.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchtohome" text="home" />
+      <Label layoutX="125.0" layoutY="115.0" prefHeight="18.0" prefWidth="354.0" text="                 GUESS THE NUMBER IN 4 CHANCES..!💀" textFill="#fffb00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cluetext" alignment="TOP_CENTER" layoutX="95.0" layoutY="208.0" prefHeight="26.0" prefWidth="437.0" textFill="#d0d700">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Circle fill="DODGERBLUE" layoutX="562.0" layoutY="340.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="timerlabel" layoutX="554.0" layoutY="331.0" prefHeight="18.0" prefWidth="16.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="next" layoutX="396.0" layoutY="291.0" mnemonicParsing="false" onAction="#nextlevel" prefHeight="18.0" prefWidth="47.0" text="next" />
+      <Button fx:id="playagain" layoutX="151.0" layoutY="291.0" mnemonicParsing="false" onAction="#playagain" text="playagain" />
+   </children>
+</AnchorPane>
